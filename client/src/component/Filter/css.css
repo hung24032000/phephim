@@ -1,0 +1,51 @@
+.box-filter {
+    background-color: #242526;
+}
+.box-filter .box-filter-header {
+    background-color: #1675b6;
+}
+.box-filter-header h2 {
+    padding: 1.5rem 1rem;
+    font-size: 1.8rem;
+}
+.box-filter-container {
+    padding: 10px 20px;
+}
+.form-group {
+    min-width: 90%;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+}
+.form-group label {
+    font-size: 1.4rem;
+    padding: 15px 0px;
+}
+
+.form-group select {
+    font-size: 1.4rem;
+    padding: 10px 20px;
+    background-color: #3a3b3c;
+    color: honeydew;
+    text-indent: 5px;
+    border: 1px solid #46494a;
+}
+
+.btn-filter {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 10px;
+}
+.btn-filter button {
+    color: #fff;
+    background-color: #67c23a;
+    border-color: #67c23a;
+    text-align: center;
+    padding: 12px 20px;
+}
+
+.btn-filter button:hover {
+    color: #fff;
+    background-color: #398439;
+    border-color: #2d672d;
+}

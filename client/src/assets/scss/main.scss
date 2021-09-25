@@ -1,0 +1,165 @@
+:root {
+    --text-color: #ffffffde;
+    --background-color: rgba(24, 25, 26, 1);
+    --background-hover: #4a4b4b;
+    --background-color-bright: #242526;
+    --margin-right-body: 23px;
+    --text-color-a: #1675b6;
+    --border-color: #333333;
+    --background-color-hsla: hsla(0, 0%, 100%, 0.065);
+    --background-navigation: linear-gradient(to right, #d91424, #73141b);
+}
+
+* {
+    box-sizing: inherit;
+    margin: 0px;
+    padding: 0px;
+}
+a {
+    text-decoration: none;
+}
+.grid {
+    max-width: 1080px;
+    width: 100%;
+    margin: 0 auto;
+}
+html {
+    font-size: 62.5%;
+    color: var(--text-color);
+    line-height: 1.6rem;
+    box-sizing: border-box;
+    line-height: 1.5rem;
+    font-family: lato, Helvetica, Arial, sans-serif;
+}
+ul {
+    padding: 0px;
+}
+.text-uppercase {
+    text-transform: uppercase !important;
+}
+.grid {
+    width: 1080px;
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+.arow-down {
+    &:after {
+        display: inline-block;
+        width: 0;
+        height: 0;
+        margin-left: 0.3em;
+        vertical-align: middle;
+        content: "";
+        border-top: 0.5em solid;
+        border-right: 0.5em solid transparent;
+        border-left: 0.5em solid transparent;
+    }
+}
+
+.main {
+    margin-top: 55px;
+}
+
+//SeriesMovie
+.seriesMovie {
+    .seriesMovie-header {
+        padding: 10px;
+        border-bottom: 0.1rem solid;
+        text-align: center;
+        cursor: text;
+        color: var(--text-color);
+    }
+    .seriesMovie-content {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .seriesMovie-item {
+        width: 120px;
+        text-align: center;
+        font-size: 1.4rem;
+        font-weight: 400px;
+        line-height: 2.1rem;
+        padding: 2px;
+
+        &:hover {
+            background-color: var(--background-hover);
+        }
+        a {
+            width: 100%;
+        }
+    }
+}
+.dropdown-movie {
+    position: absolute;
+    background-color: #1b1c1d;
+    width: 404px;
+    top: 54px;
+    cursor: pointer;
+    z-index: 4;
+    border-radius: 2px;
+    display: none;
+    a {
+        text-decoration: none;
+        color: var(--text-color);
+    }
+}
+
+.li-seriesMovie {
+    &:hover {
+        .seriesMovie {
+            display: block;
+        }
+    }
+}
+
+.main-body {
+    padding: 0px 12px;
+}
+
+// responsive moblie
+@media screen and (max-width: 600px) {
+    .MuiToolbar-regular {
+        min-height: 55px !important;
+        padding-left: 16px !important;
+        padding-right: 16px !important;
+    }
+}
+
+// Respone tablet
+@media screen and (min-width: 600px) {
+}
+
+// @media screen and (max-width: 672px) {
+//     .nav-bar__menu {
+//         position: absolute;
+//         width: 40%;
+//         height: 100vh;
+//         top: 0px;
+//         right: -1px;
+//         bottom: 0px;
+//         background-color: rgb(26, 21, 21);
+//         z-index: 2;
+//         &.hide__nav {
+//             display: none !important;
+//         }
+//         &.show__nav {
+//             display: block !important;
+//         }
+//         .navBar__list {
+//             display: flex;
+//             flex-direction: column;
+//             align-items: center;
+//             justify-content: space-evenly;
+//             height: 100vh;
+
+//             li span {
+//                 font-size: 1.2rem;
+//                 color: var(--text-color);
+//             }
+//         }
+//     }
+// }
+
+// @media screen and (min-width: 673px) {
+// }

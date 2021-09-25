@@ -1,0 +1,30 @@
+.carousel-header-body {
+    position: absolute;
+    bottom: 0;
+    padding: 20px;
+    width: 100%;
+    background-image: linear-gradient(180deg, transparent 0, #000);
+}
+.carousel-item-link {
+    color: #fff;
+    font-size: 1.6rem;
+}
+
+.carousel-item-link img {
+    width: 100%;
+    height: 460px;
+}
+.carousel-header-item-name {
+    padding: 20px 0px;
+}
+.carousel-header-item-description {
+    display: none;
+    transition: all 2s linear;
+}
+
+.carousel-item-link:hover .carousel-header-item-description {
+    display: block;
+}
+.carousel-home-header {
+    margin-bottom: 25px;
+}
